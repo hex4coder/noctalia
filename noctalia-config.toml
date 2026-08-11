@@ -1,0 +1,264 @@
+[audio]
+enable_overdrive = true
+enable_sounds = true
+sound_volume = 0.47999998927116394
+
+[backdrop]
+blur_intensity = 0.14999999664723873
+enabled = true
+tint_intensity = 0.36999999172985554
+
+[bar.default]
+background_opacity = 0.0
+capsule = true
+capsule_opacity = 0.57999998703598976
+center = [ "cat", "clock" ]
+contact_shadow = true
+start = [ "launcher", "wallpaper", "wallhaven_2", "workspaces" ]
+
+[brightness]
+enable_ddcutil = true
+sync_all_monitors = true
+
+[desktop_widgets]
+schema_version = 2
+widget_order = [
+    "desktop-widget-0000000000000001",
+    "desktop-widget-0000000000000002",
+    "desktop-widget-0000000000000003",
+    "desktop-widget-0000000000000004",
+    "desktop-widget-0000000000000005"
+]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 96.0
+    box_width = 256.0
+    cx = 231.0
+    cy = 300.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "clock"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        background = false
+        background_opacity = 0.38
+
+    [desktop_widgets.widget.desktop-widget-0000000000000002]
+    box_height = 608.0
+    box_width = 928.0
+    cx = 960.0
+    cy = 540.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "fancy_audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000002.settings]
+        background = false
+
+    [desktop_widgets.widget.desktop-widget-0000000000000003]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 231.0
+    cy = 568.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "media_player"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000003.settings]
+        background = false
+        background_opacity = 0.0
+
+    [desktop_widgets.widget.desktop-widget-0000000000000004]
+    box_height = 112.0
+    box_width = 224.0
+    cx = 240.0
+    cy = 196.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "weather"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000004.settings]
+        background = false
+        background_opacity = 0.22
+        show_forecast = false
+
+    [desktop_widgets.widget.desktop-widget-0000000000000005]
+    box_height = 48.0
+    box_width = 160.0
+    cx = 326.0
+    cy = 568.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000005.settings]
+        background = false
+        background_opacity = 0.0
+        bands = 32
+        show_when_idle = true
+
+[idle]
+behavior_order = [ "lock", "screen-off", "lock-and-suspend" ]
+
+    [idle.behavior.lock]
+    action = "command"
+    command = "swaylock"
+    enabled = true
+    timeout = 600.0
+
+    [idle.behavior.lock-and-suspend]
+    action = "lock_and_suspend"
+    enabled = true
+    timeout = 900.0
+
+    [idle.behavior.screen-off]
+    action = "screen_off"
+    enabled = true
+    timeout = 660.0
+
+[location]
+address = "Polewali Mandar"
+
+[lockscreen]
+blurred_desktop = true
+
+[lockscreen_widgets]
+enabled = true
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 70.0
+    box_width = 400.0
+    cx = 960.0
+    cy = 961.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "login_box"
+
+        [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+        background_color = "surface_variant"
+        background_opacity = 0.88
+        background_radius = 12.0
+        input_opacity = 1.0
+        input_radius = 6.0
+        show_caps_lock = true
+        show_keyboard_layout = true
+        show_login_button = true
+
+[notification]
+background_opacity = 0.44999998994171619
+
+[osd]
+background_opacity = 0.35999999195337296
+
+[plugins]
+enabled = [ "noctalia/wallhaven", "whyoolw/sharednd" ]
+
+[shell]
+font_family = "FantasqueSansM Nerd Font"
+niri_overview_type_to_launch_enabled = true
+polkit_agent = true
+telemetry_enabled = true
+
+    [shell.panel]
+    control_center_placement = "floating"
+    transparency_mode = "glass"
+
+[theme]
+builtin = "Noctalia"
+community_palette = "Catppuccin Mocha Sapphire"
+source = "wallpaper"
+wallpaper_scheme = "m3-content"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "cava", "gtk3", "gtk4", "hyprland", "kcolorscheme", "kitty", "niri", "qt", "scroll", "sway", "wezterm" ]
+    community_ids = [
+        "opencode",
+        "pear-desktop",
+        "zen-browser",
+        "telegram",
+        "neovim",
+        "vscode",
+        "rofi",
+        "obs",
+        "papirus-icons",
+        "lazygit",
+        "yazi"
+    ]
+
+[wallpaper]
+directory = "/home/kaco/Pictures/Wallpaper"
+transition_duration = 1000
+transition_on_startup = true
+
+    [wallpaper.automation]
+    interval_seconds = 600
+    order = "alphabetical"
+    recursive = false
+
+    [wallpaper.default]
+    path = "/home/kaco/Pictures/Wallpaper/wallhaven-0q5vvd.jpg"
+
+    [wallpaper.last]
+    path = "/home/kaco/Pictures/Wallpaper/wallhaven-0q5vvd.jpg"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/kaco/Pictures/Wallpaper/wallhaven-0q5vvd.jpg"
+
+    [[wallpaper.favorite]]
+    palette_source = "wallpaper"
+    path = "/home/kaco/Pictures/Wallpaper/wallhaven-0jp3my.jpg"
+    theme_mode = "dark"
+    wallpaper_scheme = "m3-content"
+
+    [[wallpaper.favorite]]
+    path = "/home/kaco/Pictures/Wallpaper/wallhaven-0q5vvd.jpg"
+    theme_mode = "auto"
+
+    [[wallpaper.favorite]]
+    path = "/home/kaco/Pictures/Wallpaper/wallhaven-1j6ep9.jpg"
+    theme_mode = "auto"
+
+    [[wallpaper.favorite]]
+    path = "/home/kaco/Pictures/Wallpaper/wallhaven-4gwewe.jpg"
+    theme_mode = "auto"
+
+    [[wallpaper.favorite]]
+    path = "/home/kaco/Pictures/Wallpaper/wallhaven-76gg39.jpg"
+    theme_mode = "auto"
+
+    [[wallpaper.favorite]]
+    path = "/home/kaco/Pictures/Wallpaper/wallhaven-96w8e8.png"
+    theme_mode = "auto"
+
+    [[wallpaper.favorite]]
+    path = "/home/kaco/Pictures/Wallpaper/wallhaven-nzl6kv.jpg"
+    theme_mode = "auto"
+
+    [[wallpaper.favorite]]
+    path = "/home/kaco/Pictures/Wallpaper/wallhaven-qdgqjl.jpg"
+    theme_mode = "auto"
+
+    [[wallpaper.favorite]]
+    path = "/home/kaco/Pictures/Wallpaper/wallhaven-oxy5em.jpg"
+    theme_mode = "auto"
+
+[widget.cat]
+type = "noctalia/bongocat:cat"
+
+[widget.wallhaven]
+type = "noctalia/wallhaven:wallhaven"
+
+[widget.wallhaven_2]
+type = "noctalia/wallhaven:wallhaven"
